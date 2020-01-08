@@ -1,7 +1,7 @@
 from item import Item
+from updatable import Updatable
 
-
-class RegularItem(Item):
+class RegularItem(Item, Updatable):
     def __init__(self, name, sell_in, quality):
         self.name = name
         self.sell_in = sell_in
