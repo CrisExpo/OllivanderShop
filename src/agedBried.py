@@ -9,7 +9,7 @@ class AgedBrie(RegularItem):
         self.quality = quality
 
     def update_quality(self):
-        if self.sell_in > 0:
+        if self.sell_in >= 0:
             self.quality += 1
         else:
             self.update_quality+= 2

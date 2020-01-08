@@ -12,7 +12,7 @@ class RegularItem(Item):
         return self.sell_in
 
     def update_quality(self):
-        if self.sell_in > 0:
+        if self.sell_in >= 0:
             self.quality -= 1
         else:
             self.quality -= 2
