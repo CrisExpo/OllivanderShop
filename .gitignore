@@ -7,6 +7,9 @@ Pipfile
 .pytest_cache/
 .vscode/
 Pipfile.lock
+src/__pycache__
+src/.pytest_cache
+src/item_types/__pycache__
 # C extensions
 *.so
 

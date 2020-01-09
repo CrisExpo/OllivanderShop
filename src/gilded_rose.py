@@ -1,9 +1,9 @@
-from item_types.agedBried import AgedBrie
-from item_types.backstage import Backstage
-from item_types.conjured import Conjured
-from item_types.sulfuras import Sulfuras
-from item_types.regular_item import RegularItem
-from item_types.item import Item
+from agedBried import AgedBrie
+from backstage import Backstage
+from conjured import Conjured
+from sulfuras import Sulfuras
+from regular_item import RegularItem
+from item import Item
 
 class GildedRose(object):
     
