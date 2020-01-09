@@ -11,11 +11,11 @@ class AgedBrie(RegularItem):
     def update_quality(self):
         if self.sell_in >= 0:
             self.quality += 1
-        else:
-            self.update_quality+= 2
+        if self.sell_in < 0:
+            self.quality+= 2
         return self.quality
-    
+        
     def update_item(self):
         AgedBrie.sell_in(self)
-        RegularItem.update_quality(self)
+        AgedBrie.update_quality(self)
         RegularItem.check_quality(self)
