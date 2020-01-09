@@ -22,7 +22,7 @@ class GildedRose(object):
 
 
 if __name__ == "__main__":
-    lista_items = GildedRose([
+    stock = GildedRose([
         RegularItem("+ 5 Dexterity Vest", 10, 20),
         AgedBrie("Aged Brie", 2, 0),
         RegularItem("Elixir of the Mongoose", 5, 7),
@@ -33,5 +33,5 @@ if __name__ == "__main__":
         Backstage("Backstage passes to a TAFKAL80ETC concert", 5, 49),
         Conjured("Conjured Mana Cake", 3, 6)])
 
-    lista_items.update_quality()
+    stock.update_quality()
  
