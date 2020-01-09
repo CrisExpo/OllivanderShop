@@ -1,2 +1,2 @@
-FLASK_APP=gilded_rose_flask.py
+FLASK_APP=app.py
 FASK_DEBUG= 1
