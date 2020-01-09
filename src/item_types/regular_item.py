@@ -1,5 +1,6 @@
-from item import Item
-from updatable import Updatable
+from item_types.item import Item
+from item_types.updatable import Updatable
+
 
 class RegularItem(Item, Updatable):
     def __init__(self, name, sell_in, quality):

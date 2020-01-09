@@ -1,4 +1,4 @@
-from regular_item import RegularItem
+from item_types.regular_item import RegularItem
 
 
 class Conjured(RegularItem):
