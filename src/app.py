@@ -2,6 +2,7 @@ from flask import Flask, render_template
 from flask_bootstrap import Bootstrap
 
 app = Flask(__name__)
+Bootstrap(app)
 
 @app.route('/')
 def index():
@@ -9,7 +10,7 @@ def index():
 
 @app.route('/blog')
 def blog():
-    return "<h1>this is a Blog!</h1>"
+    return render_template('index.html')
 
 @app.route('/blog/<blog_id>')
 def blogpost(blog_id):
